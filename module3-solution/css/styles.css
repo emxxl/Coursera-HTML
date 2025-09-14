@@ -1,0 +1,49 @@
+/* Custom styles for Module 3 Solution
+   - No inline styles per assignment requirement
+   - Bootstrap grid used; this file handles colors/layout polish
+*/
+
+/* Give navbar collapse (mobile menu) a distinct background, full-width look */
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    background-color: #f8f8f8; /* stands out from page body */
+    border-top: 1px solid #e7e7e7;
+    margin-left: -15px;  /* stretch to edges inside .container-fluid gutters */
+    margin-right: -15px;
+  }
+  .navbar-default .navbar-nav > li > a {
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 15px 0;
+  }
+}
+
+/* Heading polish */
+h1 {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  letter-spacing: 0.3px;
+}
+
+/* Tall section meets the 'really tall' requirement */
+.tall-section {
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 25px;
+  min-height: 1000px; /* forces scrolling even with little content */
+}
+
+/* Section titles */
+.section-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 6px;
+}
+
+/* Filler content spacing */
+.filler p {
+  margin-top: 15px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food, LLC — Our Menu</title>
+
+  <!-- Bootstrap 3.4.1 CSS (meets assignment's Bootstrap 3.x requirement) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- Custom CSS (NO inline styles as required) -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR (not fixed; scrolls away with the page) -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle grouped for better mobile display -->
+      <div class="navbar-header">
+        <!-- Mobile: hamburger (visible on xs only) -->
+        <button type="button"
+                class="navbar-toggle collapsed visible-xs"
+                data-toggle="collapse"
+                data-target="#food-nav-collapse"
+                aria-expanded="false"
+                aria-controls="food-nav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Brand always on the left -->
+        <a class="navbar-brand" href="#">Food, LLC</a>
+      </div>
+
+      <!-- Collapsible content: ONLY visible on xs -->
+      <div id="food-nav-collapse" class="collapse navbar-collapse visible-xs">
+        <ul class="nav navbar-nav">
+          <li><a href="#chicken">Chicken</a></li>
+          <li><a href="#beef">Beef</a></li>
+          <li><a href="#sushi">Sushi</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- PAGE HEADING -->
+  <div class="container">
+    <h1 class="text-center">Our Menu</h1>
+  </div>
+
+  <!-- SINGLE TALL SECTION (full-width grid; forces scrolling) -->
+  <div class="container">
+    <div class="row">
+      <section class="col-xs-12 tall-section">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 id="chicken" class="section-title">Chicken</h2>
+            <p>
+              Juicy, herbed, and flame-kissed. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div class="col-xs-12">
+            <h2 id="beef" class="section-title">Beef</h2>
+            <p>
+              Rich, slow-braised, melt-in-your-mouth. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div class="col-xs-12">
+            <h2 id="sushi" class="section-title">Sushi</h2>
+            <p>
+              Clean, bright, and ocean-fresh. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+        </div>
+
+        <!-- filler content to ensure tall section (and clear requirement for scrolling) -->
+        <div class="filler">
+          <p>
+            Additional placeholder copy to ensure scrolling. Repeat as needed. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Suspendisse potenti. Integer euismod mollis odio, vitae fermentum
+            risus euismod nec. Praesent eget dictum erat. Integer sit amet semper lectus. Aliquam sed
+            dapibus orci. Mauris faucibus varius purus, id bibendum nisi fermentum at.
+          </p>
+          <p>
+            Cras at diam a turpis aliquet vulputate. Nunc aliquet, purus id imperdiet consectetur, lorem
+            neque varius arcu, sed facilisis lectus mi ac nisi. Vestibulum ante ipsum primis in faucibus
+            orci luctus et ultrices posuere cubilia curae; Integer pellentesque, nulla at suscipit
+            lacinia, tortor mi tempus augue, id lobortis nunc urna at ex.
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- jQuery (required for Bootstrap 3 JS plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- Bootstrap 3.4.1 JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
