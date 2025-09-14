@@ -1,0 +1,76 @@
+/*
+  Module 2 Solution — Pure CSS, no frameworks.
+  Breakpoints:
+    - Desktop: 992px+
+    - Tablet: 768–991px
+    - Mobile: ≤767px
+*/
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111;
+  background: #fafafa;
+}
+
+.page-header { text-align: center; padding: 24px 12px; }
+.page-header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.row { width: 100%; max-width: 1200px; margin: 0 auto; }
+.menu { padding: 0 12px; }
+.menu::after { content: ""; display: block; clear: both; }
+
+.menu-section {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 12px;
+}
+
+.menu-section .section-body {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 16px;
+  padding-top: 64px;
+  min-height: 220px;
+}
+
+.section-title {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  margin: 0;
+  border: 1px solid #000;
+  padding: 8px 14px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  background: #e9e9e9;
+}
+
+.chicken .section-title { background: #fde2e2; }
+.beef    .section-title { background: #e2f3fd; }
+.sushi   .section-title { background: #e8fde2; }
+
+.chicken .section-body { background: #fffaf8; }
+.beef    .section-body { background: #f8fbff; }
+.sushi   .section-body { background: #f9fff8; }
+
+.menu-section { margin-bottom: 24px; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-section { width: 50%; }
+  .menu-section:nth-child(3) { width: 100%; }
+}
+
+@media (min-width: 992px) {
+  .menu-section { width: 33.3333%; }
+}
